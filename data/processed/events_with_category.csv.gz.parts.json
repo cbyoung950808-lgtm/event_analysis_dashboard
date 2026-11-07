@@ -1,0 +1,16 @@
+{
+  "sha256": "c6f218894df565d609d2caafb661f0aea01aa268ca680a50645103aa720c1398",
+  "size": 45260531,
+  "parts": [
+    {
+      "name": "events_with_category.csv.gz.part001",
+      "size": 25165824,
+      "sha256": "51b9dc49d272c39b1f576151320895881c8aa9e95ae028c46be6effa040efc8c"
+    },
+    {
+      "name": "events_with_category.csv.gz.part002",
+      "size": 20094707,
+      "sha256": "a78958e8c9e243ab2cb5a81d61a115b959a9c0d5a3a8277b3ad8859273d08a29"
+    }
+  ]
+}

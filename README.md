@@ -23,7 +23,9 @@ requirements.txt
 analysis/                 # 실제 대시보드가 import하는 모듈만 포함
 data/SOURCE.txt
 data/processed/events_clean.csv.gz
-data/processed/events_with_category.csv.gz
+data/processed/events_with_category.csv.gz.part001
+data/processed/events_with_category.csv.gz.part002
+data/processed/events_with_category.csv.gz.parts.json
 cloud_manifest.json       # 파일 크기와 압축 해제 내용 SHA-256
 ```
 
@@ -65,3 +67,5 @@ Python 3.12의 별도 환경에서 Matplotlib 없이 압축 CSV만 사용해 모
 선택 탭만 계산하도록 적용했지만 모든 탭을 방문한 테스트의 메모리 최대치는 약 2.49GiB였습니다.
 Cloud의 실제 자원 한도에 따라 부족할 수 있으므로 배포 성공·동시 접속 성능을 보장하는 결과는 아닙니다.
 자세한 검증 환경과 한계는 `verification.json`을 확인하세요.
+
+대용량 gzip의 두 조각은 실행 시 임시 폴더에 복원되며 각 조각과 복원본의 SHA-256을 검증합니다. CSV 내용은 동일합니다.

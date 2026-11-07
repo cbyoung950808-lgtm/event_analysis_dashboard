@@ -1,0 +1,36 @@
+{
+  "entrypoint": "streamlit_app.py",
+  "python": "3.12",
+  "runtime_modules": [
+    "__init__",
+    "category_dashboard",
+    "category_scatter",
+    "dashboard",
+    "dashboard_metrics",
+    "data_files",
+    "funnel_dashboard",
+    "funnel_metrics",
+    "retention_dashboard",
+    "retention_metrics",
+    "retention_service",
+    "table_styles"
+  ],
+  "data": [
+    {
+      "source": "data/processed/events_clean.csv",
+      "cloud_path": "data/processed/events_clean.csv.gz",
+      "source_bytes": 168958356,
+      "compressed_bytes": 36112573,
+      "sha256_uncompressed": "21aef05129e76b4fc6f89d7411a2b6ff01e739cf4d59e4b6b47161281669cd67"
+    },
+    {
+      "source": "data/processed/events_with_category.csv",
+      "cloud_path": "data/processed/events_with_category.csv.gz.parts.json",
+      "source_bytes": 215601953,
+      "compressed_bytes": 45260531,
+      "sha256_uncompressed": "7345459c3b37520b4e3e2d742c70b333933b8400ea69721d911fa2625a8a48e1",
+      "parts_manifest": "data/processed/events_with_category.csv.gz.parts.json",
+      "logical_path": "data/processed/events_with_category.csv.gz"
+    }
+  ]
+}

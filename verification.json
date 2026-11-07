@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "data_format": "csv.gz and SHA-256 verified gzip parts",
+  "lazy_tabs": true,
+  "active_visitors": 1395013,
+  "event_rows": 2730238,
+  "tested_tabs": [
+    "일별 추이",
+    "카테고리 분석",
+    "퍼널",
+    "리텐션",
+    "산포도"
+  ],
+  "local_peak_rss_mib": 2545.6,
+  "platform": "darwin",
+  "limitations": "Local isolated Python 3.12 verification, not actual Linux Cloud deployment or concurrency.",
+  "split_data_verified": true
+}
